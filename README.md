@@ -132,4 +132,4 @@ SEO-friendly URLs implemented using RewriteConfiguration:
 
 You can watch the QuickExam website demo here:
 
-[Watch Video]([https://drive.google.com/file/d/FILE_ID/view](https://isgacloud-my.sharepoint.com/:v:/g/personal/youssef_aouani_edu_isga_ma/IQBCkqOeCGiMSLwb03DHGwj6AYblsQZTjhDWQU4p30-VGxE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=0uoALb))
+[Watch Video](https://isgacloud-my.sharepoint.com/:v:/g/personal/youssef_aouani_edu_isga_ma/IQBCkqOeCGiMSLwb03DHGwj6AYblsQZTjhDWQU4p30-VGxE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=pC9owk)
