@@ -12,10 +12,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- Tailwind CSS -->
+        
         <script src="https://cdn.tailwindcss.com"></script>
 
-        <!-- Font Awesome -->
+        
         <link rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
@@ -368,7 +368,7 @@
                     <p>Please sign in to your account</p>
                 </div>
 
-                <!-- Error message -->
+                
                 <h:panelGroup rendered="#{not empty authController.errorMessage}"
                               layout="block"
                               styleClass="alert-error">
@@ -378,7 +378,7 @@
 
                 <h:form id="loginForm">
 
-                    <!-- Email -->
+                    
                     <div class="form-group">
                         <h:outputLabel for="email" value="Email Address" styleClass="form-label"/>
                         <div class="input-icon">
@@ -393,7 +393,7 @@
                         <h:message for="email" styleClass="error-message"/>
                     </div>
 
-                    <!-- Password -->
+                    
                     <div class="form-group">
                         <h:outputLabel for="password" value="Password" styleClass="form-label"/>
                         <div class="input-icon">
@@ -429,4 +429,5 @@
     </h:body>
 
 </f:view>
+
 </html>
