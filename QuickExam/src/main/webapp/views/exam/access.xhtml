@@ -9,10 +9,10 @@
         <title>Enter Exam Code - QuickExam</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- Tailwind CSS -->
+        
         <script src="https://cdn.tailwindcss.com"></script>
 
-        <!-- Font Awesome -->
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
         <style>
@@ -333,13 +333,13 @@
     </h:head>
     <h:body class="min-h-screen">
 
-        <!-- Header -->
+        
         <ui:include src="/views/layouts/header.xhtml" />
 
-        <!-- Main Content -->
+        
         <main class="py-8 px-4 sm:px-6">
             <div class="main-container">
-                <!-- Page Title -->
+                
                 <div class="text-center mb-12">
                     <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                         Enter Exam Session Code
@@ -350,7 +350,7 @@
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <!-- Left Column: Code Entry Form -->
+                    
                     <div class="lg:col-span-2">
                         <div class="code-card p-8">
                             <div class="form-header">
@@ -370,7 +370,7 @@
                             </div>
 
                             <h:form id="codeForm" styleClass="space-y-10">
-                                <!-- Code Input Field -->
+                                
                                 <div class="input-container">
                                     <h:inputText id="code"
                                                  value="#{examController.code}"
@@ -381,13 +381,13 @@
                                                  requiredMessage="Please enter an exam code" />
                                 </div>
 
-                                <!-- Code Example -->
+                                
                                 <div class="code-example">
                                     <p class="text-gray-600 text-sm mb-2">Example format:</p>
                                     <span>A1B2C3D4E5</span>
                                 </div>
 
-                                <!-- Submit Button -->
+                                
                                 <div class="pt-2">
                                     <h:commandLink value="Start Exam Session"
                                                      action="#{examController.validateAndStartExam()}"
@@ -396,13 +396,13 @@
                                         <i class="fas fa-play-circle"></i>
                                     </h:commandLink>
                                 </div>
-                                <!-- Form Messages -->
+                                
                                 <h:message for="code"
                                            styleClass="error-message"
                                            showDetail="true" />
                             </h:form>
 
-                            <!-- Information Box -->
+                            
                             <div class="info-box">
                                 <h4>
                                     <i class="fas fa-info-circle"></i>
@@ -416,7 +416,7 @@
                                 </p>
                             </div>
 
-                            <!-- Global Messages -->
+                            
                             <div class="mt-6">
                                 <h:messages globalOnly="true"
                                             infoClass="success-message"
@@ -426,7 +426,7 @@
                         </div>
                     </div>
 
-                    <!-- Right Column: Exam Guidelines -->
+                    
                     <div class="lg:col-span-1">
                         <div class="guidelines-card p-8">
                             <h2 class="section-title">
@@ -435,7 +435,7 @@
                             </h2>
 
                             <div class="space-y-4">
-                                <!-- Guideline 1 -->
+                                
                                 <div class="guideline-item">
                                     <div class="guideline-icon" style="background: #dbeafe; color: #1d4ed8;">
                                         <i class="fas fa-clock"></i>
@@ -446,7 +446,7 @@
                                     </div>
                                 </div>
 
-                                <!-- Guideline 2 -->
+                                
                                 <div class="guideline-item">
                                     <div class="guideline-icon" style="background: #dcfce7; color: #16a34a;">
                                         <i class="fas fa-save"></i>
@@ -457,7 +457,7 @@
                                     </div>
                                 </div>
 
-                                <!-- Guideline 3 -->
+                                
                                 <div class="guideline-item">
                                     <div class="guideline-icon" style="background: #fef3c7; color: #d97706;">
                                         <i class="fas fa-redo"></i>
@@ -468,7 +468,7 @@
                                     </div>
                                 </div>
 
-                                <!-- Guideline 4 -->
+                                
                                 <div class="guideline-item" style="background-color:rgba(255,0,0,0.06); padding:15px; border-radius:6px;">
                                 <div class="guideline-icon" style="background: #fee2e2; color: #dc2626;">
                                         <i class="fas fa-ban"></i>
@@ -481,7 +481,7 @@
 
                             </div>
 
-                            <!-- Back to Home Link -->
+                            
                             <div class="mt-8 pt-8 border-t border-gray-200">
                                 <h:link outcome="/index.xhtml"
                                         styleClass="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
@@ -495,7 +495,7 @@
             </div>
         </main>
 
-        <!-- JavaScript -->
+        
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 const codeInput = document.getElementById('code');
@@ -539,4 +539,5 @@
 
     </h:body>
 </f:view>
+
 </html>
