@@ -10,10 +10,8 @@
         <title>Exam Countdown - QuickExam</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- Tailwind CSS -->
         <script src="https://cdn.tailwindcss.com"></script>
-
-        <!-- Font Awesome -->
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
         <style>
@@ -135,14 +133,14 @@
     </h:head>
     <h:body class="min-h-screen py-8 px-4">
 
-        <!-- Header -->
+        
         <ui:include src="/views/layouts/header.xhtml" />
 
-        <!-- Main Content -->
+        
         <main class="container mx-auto px-4 sm:px-6">
             <div class="countdown-card p-8">
 
-                <!-- Icon and Title -->
+                
                 <div class="text-center mb-10">
                     <div class="exam-icon mb-6">
                         <i class="fas fa-clock"></i>
@@ -159,7 +157,7 @@
                     <h:panelGroup id="displayTimeRemaining">
                         <h:panelGroup rendered="#{accessExamBean.candidateExam != null}">
 
-                            <!-- Time Remaining Display -->
+                            
                             <div class="text-center mb-8">
                                 <h2 class="text-xl font-semibold text-gray-700 mb-4">
                                     <i class="fas fa-hourglass-half mr-2"></i>
@@ -174,7 +172,7 @@
                                 </p>
                             </div>
 
-                            <!-- Exam Details -->
+                            
                             <div class="mb-8">
                                 <h2 class="text-xl font-semibold text-gray-700 mb-4">
                                     <i class="fas fa-calendar-alt mr-2"></i>
@@ -224,13 +222,13 @@
                                 </div>
                             </div>
 
-                            <!-- Auto-refresh poll -->
+                            
                             <p:poll interval="1"
                                     update="displayTimeRemaining"
                                     listener="#{accessExamBean.calculateTimeRemaining}"
                                     style="display: none;" />
 
-                            <!-- Important Information -->
+                            
                             <div class="info-box">
                                 <h4 class="text-lg font-semibold text-blue-900 mb-3 flex items-center">
                                     <i class="fas fa-info-circle mr-2"></i>
@@ -252,7 +250,7 @@
                                 </ul>
                             </div>
 
-                            <!-- Back to Home Button -->
+                            
                             <div class="mt-8 pt-8 border-t border-gray-200 text-center">
                                 <h:link outcome="/index.xhtml"
                                         styleClass="inline-flex items-center px-6 py-3 bg-gray-100 text-gray-700 font-medium rounded-lg hover:bg-gray-200 transition-colors">
@@ -263,7 +261,7 @@
 
                         </h:panelGroup>
 
-                        <!-- Fallback if no exam data -->
+                        
                         <h:panelGroup rendered="#{accessExamBean.candidateExam == null}">
                             <div class="text-center py-12">
                                 <div class="exam-icon mb-6" style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);">
@@ -288,7 +286,7 @@
             </div>
         </main>
 
-        <!-- JavaScript -->
+        
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 // Add smooth animations
@@ -320,4 +318,5 @@
 
     </h:body>
 </f:view>
+
 </html>
